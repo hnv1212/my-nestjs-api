@@ -1,0 +1,26 @@
+This api using:
+- typeorm
+- nestjs
+
+Dependencies:
+- @nestjs/typeorm 
+- typeorm 
+- pg 
+- @nestjs/swagger 
+- @nestjs/config 
+- @nestjs/passport 
+- @nestjs/jwt 
+- passport 
+- passport-jwt 
+- bcrypt 
+- helmet 
+- express-rate-limit 
+- dotenv 
+- joi 
+- class-validator 
+- class-transformer
+
+Dev-dependencies:
+- @types/passport-jwt 
+- @types/passport-jwt 
+- @types/bcrypt
