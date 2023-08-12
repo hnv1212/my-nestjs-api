@@ -1,9 +1,13 @@
+import * as Joi from 'joi';
 import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
+
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DatabaseModule } from './database/database.module';
-import { ConfigModule } from '@nestjs/config';
-import Joi from 'joi';
+import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
+import { TransactionsModule } from './transactions/transactions.module';
 
 @Module({
   imports: [
@@ -21,6 +25,9 @@ import Joi from 'joi';
       }),
     }),
     DatabaseModule,
+    UsersModule,
+    AuthModule,
+    TransactionsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
