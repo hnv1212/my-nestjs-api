@@ -8,6 +8,8 @@ import { DatabaseModule } from './database/database.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { TransactionsModule } from './transactions/transactions.module';
+import { SqsProducerModule } from './sqs-producer/sqs-producer.module';
+import { SqsConsumerModule } from './sqs-consumer/sqs-consumer.module';
 
 @Module({
   imports: [
@@ -28,6 +30,8 @@ import { TransactionsModule } from './transactions/transactions.module';
     UsersModule,
     AuthModule,
     TransactionsModule,
+    SqsProducerModule,
+    SqsConsumerModule,
   ],
   controllers: [AppController],
   providers: [AppService],

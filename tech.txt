@@ -19,6 +19,8 @@ Dependencies:
 - joi 
 - class-validator 
 - class-transformer
+- @ssut/nestjs-sqs
+- aws-sdk
 
 Dev-dependencies:
 - @types/passport-jwt 
