@@ -1,8 +1,8 @@
 import { Injectable, NotAcceptableException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { CreateUserDto } from 'src/users/dto/create-user.dto';
-import { User } from 'src/users/entities/user.entity';
-import { UsersService } from 'src/users/users.service';
+import { CreateUserDto } from 'src/domain/users/dto/create-user.dto';
+import { User } from 'src/domain/users/entities/user.entity';
+import { UsersService } from 'src/domain/users/users.service';
 import { LoginDto } from './dto/login.dto';
 import { E_INCORRECT_EMAIL_OR_PASSWORD } from 'src/common/exceptions';
 

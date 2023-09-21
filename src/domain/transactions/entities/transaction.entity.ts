@@ -1,7 +1,7 @@
 import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
 import { TransactionTypeEnum } from '../enums/transaction-type.enum';
 import { TransactionCategoryEnum } from '../enums/transaction-category.enum';
-import { User } from 'src/users/entities/user.entity';
+import { User } from 'src/domain/users/entities/user.entity';
 import { Exclude } from 'class-transformer';
 
 @Entity('transactions')

@@ -18,8 +18,8 @@ import {
   E_USER_EMAIL_TAKEN,
 } from 'src/common/exceptions';
 import { LoginDto } from './dto/login.dto';
-import { User } from 'src/users/entities/user.entity';
-import { CreateUserDto } from 'src/users/dto/create-user.dto';
+import { User } from 'src/domain/users/entities/user.entity';
+import { CreateUserDto } from 'src/domain/users/dto/create-user.dto';
 
 @UseInterceptors(ClassSerializerInterceptor)
 @ApiTags('auth')

@@ -5,11 +5,12 @@ import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DatabaseModule } from './database/database.module';
-import { UsersModule } from './users/users.module';
+import { UsersModule } from './domain/users/users.module';
 import { AuthModule } from './auth/auth.module';
-import { TransactionsModule } from './transactions/transactions.module';
 import { SqsProducerModule } from './sqs-producer/sqs-producer.module';
 import { SqsConsumerModule } from './sqs-consumer/sqs-consumer.module';
+import { TransactionsModule } from './domain/transactions/transactions.module';
+import { CatalogModule } from './domain/catalog/catalog.module';
 
 @Module({
   imports: [
@@ -30,8 +31,9 @@ import { SqsConsumerModule } from './sqs-consumer/sqs-consumer.module';
     UsersModule,
     AuthModule,
     TransactionsModule,
-    SqsProducerModule,
-    SqsConsumerModule,
+    // SqsProducerModule,
+    // SqsConsumerModule,
+    CatalogModule,
   ],
   controllers: [AppController],
   providers: [AppService],

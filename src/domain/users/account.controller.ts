@@ -18,7 +18,6 @@ import {
 } from '@nestjs/swagger';
 import { UsersService } from './users.service';
 import { User } from './models/user.model';
-import { TransactionsService } from 'src/transactions/transactions.service';
 import { CurrentUser } from 'src/auth/decorators/current-user.decorator';
 import {
   E_PASSWORD_INCORRECT,
@@ -27,6 +26,7 @@ import {
 } from 'src/common/exceptions';
 import { UserAuthGuard } from 'src/auth/guards/user-auth.guard';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { TransactionsService } from '../transactions/transactions.service';
 
 @UseInterceptors(ClassSerializerInterceptor)
 @UseGuards(UserAuthGuard)
