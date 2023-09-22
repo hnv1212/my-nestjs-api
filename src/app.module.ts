@@ -11,6 +11,7 @@ import { SqsProducerModule } from './sqs-producer/sqs-producer.module';
 import { SqsConsumerModule } from './sqs-consumer/sqs-consumer.module';
 import { TransactionsModule } from './domain/transactions/transactions.module';
 import { CatalogModule } from './domain/catalog/catalog.module';
+import { ProductModule } from './domain/product/product.module';
 
 @Module({
   imports: [
@@ -34,6 +35,7 @@ import { CatalogModule } from './domain/catalog/catalog.module';
     // SqsProducerModule,
     // SqsConsumerModule,
     CatalogModule,
+    ProductModule,
   ],
   controllers: [AppController],
   providers: [AppService],
